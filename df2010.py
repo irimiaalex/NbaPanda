@@ -31,11 +31,13 @@ lst=[df2010,df2011,df2012,df2013,df2014,df2015,df2016,df2017,df2018,df2019]
 
 season=2010
 for filename in lst:
-    filename.to_csv(str(season))
+    filename.to_csv(str(season), index = False)
     season+=1
 
+print(df2010.columns)
 
-print(df2015.head(5))
+
+
 
 
 
